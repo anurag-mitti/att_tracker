@@ -9,7 +9,7 @@ function App() {
   const [responseMessage, setResponseMessage] = useState(''); // State to store response message
 
   useEffect(() => {
-    // Function to fetch the latest attendance data from the backend
+    
     const fetchData = () => {
       fetch('http://localhost:3000/')
         .then(response => response.json())
@@ -21,13 +21,13 @@ function App() {
         });
     };
 
-    // Fetch data once when the component mounts
+    
     fetchData();
 
-    // Set up polling every 2 seconds
+    
     const intervalId = setInterval(fetchData, 3000);
 
-    // Cleanup the interval when the component is unmounted
+    
     return () => clearInterval(intervalId);
   }, []);
 
@@ -64,8 +64,8 @@ function App() {
       .then(response => response.json())
       .then(responseData => {
         console.log(responseData);
-        setResponseMessage(responseData.message); // Set the response message from backend
-        fetchData(); // Refresh attendance data after updating
+        setResponseMessage(responseData.message); 
+        fetchData(); 
       })
       .catch(err => {
         console.error("Error submitting data:", err);
@@ -73,20 +73,19 @@ function App() {
       });
   };
 
-  // Handle the form submission for calculating required classes
+  
   const handleCalculateSubmit = (event) => {
     event.preventDefault();
 
-    // Check for valid subject and target percentage
+    
     if (!subject || !targetPercentage || isNaN(targetPercentage) || targetPercentage <= 0) {
       setError('Please provide a valid subject and a target percentage greater than 0.');
       return;
     }
 
-    // Reset the error message if everything is valid
+    
     setError('');
 
-    // Send a POST request to calculate the required classes
     const data = { subject, targetPercentage: parseFloat(targetPercentage) };
 
     fetch('http://localhost:3000/calculate-classes-required', {
@@ -99,7 +98,7 @@ function App() {
       .then(response => response.json())
       .then(responseData => {
         console.log(responseData);
-        setResponseMessage(responseData.message); // Set the response message from backend
+        setResponseMessage(responseData.message); 
       })
       .catch(err => {
         console.error("Error submitting data:", err);
