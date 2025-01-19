@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // Root of the project
+    "paths": {
+      "@/*": ["src/*"] // Map @/ to src/
+    },
+    "esModuleInterop": true,
+    "allowJs": true,
+    "checkJs": false,
+    "forceConsistentCasingInFileNames": true
+  }
+}
