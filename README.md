@@ -1,5 +1,5 @@
-**Attendance Tracker 
-**This project is a web-based application built using React for the frontend and Node.js with Express for the backend. The main objective is to help students track their class attendance, mark classes as missed, and calculate how many more classes they need to attend to maintain a specific attendance percentage.
+                                                                                              *Attendance Tracker*
+This project is a web-based application built using React for the frontend and Node.js with Express for the backend. The main objective is to help students track their class attendance, mark classes as missed, and calculate how many more classes they need to attend to maintain a specific attendance percentage.
 
 The chatbot is integrated with Dialogflow for natural language processing, allowing students to interact with the system using voice or text input. Students can query attendance data, mark absences, and check the number of classes they need to attend to maintain a target attendance percentage.
 
