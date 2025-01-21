@@ -1,5 +1,5 @@
 {
-  "name": "frontend_tracker",
+  "name": "kill",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -29,5 +29,9 @@
     "globals": "^15.14.0",
     "sass-embedded": "^1.83.4",
     "vite": "^6.0.11"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "author": "",
+  "license": "ISC"
 }
