@@ -16,6 +16,8 @@ Database: File-based storage using JSON (attendance data is stored in a attendan
 Dialogflow: For creating the chatbot and handling natural language understanding (NLU).
 Cron Jobs: For scheduling regular tasks (if required in the future)
 
+For chatbot try prompts like " I missed 2 BE classes", "how many BE classes can i miss to maintain 80% attenance"
+
 Features Overview
 1. Frontend (React)
 Dashboard: Displays attendance information for different subjects. It fetches data from the backend every few seconds to keep the attendance data updated.
